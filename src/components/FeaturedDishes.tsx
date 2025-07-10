@@ -124,7 +124,10 @@ const FeaturedRecipes = () => {
                   </div>
                 </div>
 
-                <button className="w-full bg-gray-900 hover:bg-amber-600 text-white py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
+                <button 
+                  onClick={() => alert(`View Recipe: ${recipe.name}`)} // Добавлен обработчик onClick
+                  className="w-full bg-gray-900 hover:bg-amber-600 text-white py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
+                >
                   <BookOpen className="h-4 w-4" />
                   <span>View Recipe</span>
                 </button>
