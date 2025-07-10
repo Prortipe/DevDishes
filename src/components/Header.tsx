@@ -56,8 +56,8 @@ const Header = () => {
                 </button>
               )}
               <button
-                onClick={() => setIsLoginOpen(true)}
-                className={`px-4 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 ${
+               onClick={() => setIsLoginOpen(true)}
+                className={`px-3 py-1.5 rounded-full font-medium transition-all duration-300 transform hover:scale-105 ${
                   isLoggedIn 
                     ? 'bg-gray-600 hover:bg-gray-700 text-white' 
                     : 'bg-amber-600 hover:bg-amber-700 text-white'
@@ -111,14 +111,14 @@ const Header = () => {
                   </button>
                 )}
                 <button
-                  onClick={() => setIsLoginOpen(true)}
-                  className={`px-4 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 w-fit ${
-                    isLoggedIn 
-                      ? 'bg-gray-600 hover:bg-gray-700 text-white' 
-                      : 'bg-amber-600 hover:bg-amber-700 text-white'
-                  }`}
-                >
-                  {isLoggedIn ? 'Profile' : 'Sign In'}
+                 onClick={() => setIsLoginOpen(true)}
+                className={`px-3 py-1.5 rounded-full font-medium transition-all duration-300 transform hover:scale-105 ${
+                  isLoggedIn 
+                    ? 'bg-gray-600 hover:bg-gray-700 text-white' 
+                    : 'bg-amber-600 hover:bg-amber-700 text-white'
+                }`}
+              >
+                {isLoggedIn ? 'Profile' : 'Sign In'}
                 </button>
               </nav>
             </div>
