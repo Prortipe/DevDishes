@@ -197,7 +197,10 @@ const IngredientSearch = () => {
                       <span className="text-amber-600 font-medium">{recipe.difficulty}</span>
                     </div>
 
-                    <button className="w-full bg-gray-900 hover:bg-amber-600 text-white py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105">
+                    <button 
+                      onClick={() => alert(`View Recipe: ${recipe.name}`)} // Добавлен обработчик onClick
+                      className="w-full bg-gray-900 hover:bg-amber-600 text-white py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105"
+                    >
                       View Recipe
                     </button>
                   </div>
